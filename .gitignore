@@ -1,0 +1,59 @@
+
+# At root level. Contents/Resources/
+
+certificates/*
+.*
+*.pyc
+*.pyo
+*~
+#*
+*.1
+*.bak
+*.bak2
+*.svn
+*.w2p
+*.class
+*.rej
+*.orig
+Thumbs.db
+.DS_Store
+index.yaml
+routes.py
+logging.conf
+gluon/tests/VERSION
+gluon/tests/sql.log
+./httpserver.log
+./httpserver.pid
+./parameters*.py
+./deposit
+./benchmark
+./build
+./dist*
+./dummy_tests
+./optional_contrib
+./ssl
+./docs
+./logs
+./*.zip
+./gluon/*.1
+./gluon/*.txt
+./admin.w2p
+./examples.w2p
+
+# Skip .gitignore
+!.gitignore
+
+# Ignore all applications.
+
+applications/*
+
+# Include eventline.
+!applications/eventline/*
+
+# Eventline specific ignores.
+applications/eventline/databases/*
+applications/eventline/sessions/*
+applications/eventline/errors/*
+applications/eventline/cache/*
+applications/eventline/uploads/*
+
