@@ -45,11 +45,11 @@ gluon/tests/sql.log
 
 
 # Ignore all applications.
-
+!applications/
 applications/*
 
 # Include eventline.
-!applications/eventline/*
+!applications/eventline
 
 # Eventline specific ignores.
 applications/eventline/databases/*
