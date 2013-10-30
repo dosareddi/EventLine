@@ -81,3 +81,17 @@ use_janrain(auth, filename='private/janrain.key')
 
 ## after defining tables, uncomment below to enable auditing
 # auth.enable_record_versioning(db)
+
+db.define_table(
+                'timeline',
+                Field('eid', 'string'), 
+                Field('description', 'string'),
+                Field('children', 'list:string'))
+
+db.define_table(
+                'task',
+                Field('eid', 'string'),
+                Field('description', 'string'),
+                Field('parentpath', 'string'),
+                Field('children', 'list:string'))
+

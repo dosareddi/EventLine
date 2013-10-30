@@ -39,6 +39,24 @@ gluon/tests/sql.log
 ./gluon/*.txt
 ./admin.w2p
 ./examples.w2p
+CHANGELOG
+LICENSE
+MANIFEST.in
+README.markdown
+VERSION
+anyserver.py
+examples/
+extras/
+gluon/
+handlers/
+httpserver.log
+parameters_8000.py
+parameters_8080.py
+scripts/
+site-packages/
+web2py.py
+httpserver.pid
+logs/
 
 # Skip .gitignore
 !.gitignore
