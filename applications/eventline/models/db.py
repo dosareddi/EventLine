@@ -43,6 +43,9 @@ from gluon.tools import Auth, Crud, Service, PluginManager, prettydate
 auth = Auth(db)
 crud, service, plugins = Crud(db), Service(), PluginManager()
 
+from gluon.contrib.login_methods.gae_google_account import GaeGoogleAccount
+auth.settings.login_form = GaeGoogleAccount()
+
 ## create all tables needed by auth if not custom tables
 auth.define_tables(username=False, signature=False)
 
