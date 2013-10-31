@@ -1,0 +1,9 @@
+Testing with GAE.
+-----------------
+Install AppEngine SDK
+https://developers.google.com/appengine/docs/python/gettingstartedpython27/devenvironment
+
+$ mkdir gae
+$ cd gae
+$ ln -s /Users/das/Downloads/web2py/web2py.app/Contents/Resources eventline
+$ dev_appserver.py eventline/

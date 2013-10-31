@@ -19,7 +19,6 @@ Thumbs.db
 .DS_Store
 index.yaml
 routes.py
-logging.conf
 gluon/tests/VERSION
 gluon/tests/sql.log
 ./httpserver.log
@@ -39,6 +38,35 @@ gluon/tests/sql.log
 ./gluon/*.txt
 ./admin.w2p
 ./examples.w2p
+ABOUT
+CHANGELOG
+LICENSE
+PythonApplet.icns
+README.markdown
+VERSION
+__boot__.py
+__error__.sh
+app.example.yaml
+examples/
+extras/
+gluon/
+handlers/
+httpserver.log
+httpserver.pid
+include/
+lib/
+logging.example.conf
+logs/
+mpl-data/
+options_std.py
+parameters_8000.py
+queue.example.yaml
+router.example.py
+routes.example.py
+scripts/
+site-packages/
+splashlogo.gif
+web2py.py
 
 # Skip .gitignore
 !.gitignore
@@ -51,6 +79,7 @@ applications/*
 # Include eventline.
 !applications/eventline
 
+
 # Eventline specific ignores.
 applications/eventline/databases/*
 applications/eventline/sessions/*
@@ -58,3 +87,10 @@ applications/eventline/errors/*
 applications/eventline/cache/*
 applications/eventline/uploads/*
 
+# Config files
+!logging.conf.bak
+!app.yaml
+!routes.py
+
+# Documentation
+!INFO
