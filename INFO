@@ -1,0 +1,35 @@
+GitHub.
+-------
+Contents/Resources/. should be your working directory.
+This is what the .gitignore is based off.
+Create branches starting from this.
+
+GitHub branching practice.
+--------------------------
+For each new changelist
+git checkout -b <branch>
+git fetch
+git add ...
+git commit ..
+git push origin <branch>
+
+
+Testing with GAE.
+-----------------
+Install AppEngine SDK
+https://developers.google.com/appengine/docs/python/gettingstartedpython27/devenvironment
+
+$ mkdir gae
+$ cd gae
+$ ln -s /Users/das/Downloads/web2py/web2py.app/Contents/Resources eventline
+$ dev_appserver.py eventline/
+
+http://127.0.0.1:8080 or whatever port app engine says its running on.
+
+If all the above are done already:
+change application in app.yaml
+application: othaeventline 
+to your testing one and deploy it.
+It doesn't matter what it is for local testing.
+
+
