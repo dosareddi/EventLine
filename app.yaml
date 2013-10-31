@@ -1,5 +1,3 @@
-#  For Google App Engine deployment, copy this file to app.yaml
-#  and edit as required
 #  See http://code.google.com/appengine/docs/python/config/appconfig.html
 #  and http://web2py.com/book/default/chapter/11?search=app.yaml
 
