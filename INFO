@@ -1,3 +1,19 @@
+GitHub.
+-------
+Contents/Resources/. should be your working directory.
+This is what the .gitignore is based off.
+Create branches starting from this.
+
+GitHub branching practice.
+--------------------------
+For each new changelist
+git checkout -b <branch>
+git fetch
+git add ...
+git commit ..
+git push origin <branch>
+
+
 Testing with GAE.
 -----------------
 Install AppEngine SDK
