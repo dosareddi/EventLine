@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-
 default_application = 'eventline' 
 default_controller = 'default'
 default_function = 'index'
 
-
+# TODO(dasarathi): Not sure if all the crap below is required. Test and get rid
+# of them.
 
 # routes_in is a tuple of tuples.  The first item in each is a regexp that will
 # be used to match the incoming request URL. The second item in the tuple is
