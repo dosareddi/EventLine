@@ -75,4 +75,6 @@ applications/eventline/sessions/*
 applications/eventline/errors/*
 applications/eventline/cache/*
 applications/eventline/uploads/*
+applications/eventline/static/js/*
+applications/eventline/static/css/*
 
