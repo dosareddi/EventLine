@@ -1,0 +1,26 @@
+﻿<div>
+    <!--Save button-->
+    <div>
+        <button type="button" class="btn btn-primary pull-right" data-ng-click="save()">Save</button>
+    </div>
+
+
+    <ul ng-app="Application">
+        <li ng-repeat="taskId in tree.tasks[tree.eid].subtaskIds" ng-include="'tree_item_renderer.html'"></li>
+    </ul>
+
+    <script type="text/ng-template"  id="tree_item_renderer.html">
+        <div ng-mouseenter="visibility = ''" ng-mouseleave="visibility = 'my-hide'">
+            <a href="#" editable-text="tree">
+                {{tree.tasks[taskId].desc}}
+            </a>
+            <button class="btn btn-default btn-xs" ng-hide="visibility" ng-click="addSiblingTask(taskId)">+</button>
+            <button class="btn btn-default btn-xs" ng-class="visibility" ng-click="deleteTask(taskId)">-</button>
+            <button class="btn btn-default btn-xs" ng-class="visibility" ng-click="addChildTask(taskId)">++</button>
+        </div>
+        <ul>
+            <li ng-repeat="taskId in tree.tasks[taskId].subtaskIds" ng-include="'tree_item_renderer.html'"></li>
+        </ul>
+    </script>
+
+</div>
