@@ -4,14 +4,16 @@
         <button type="button" class="btn btn-primary pull-right" data-ng-click="save()">Save</button>
     </div>
 
-
-    <ul ng-app="Application">
-        <li ng-repeat="taskId in tree.tasks[tree.eid].subtaskIds" ng-include="'tree_item_renderer.html'"></li>
-    </ul>
-
+	<div>
+		<a href="#" editable-text="tree.title">{{ tree.title || 'empty' }}</a>
+		
+	    <ul ng-app="Application">
+	        <li ng-repeat="taskId in tree.tasks[tree.eid].subtaskIds" ng-include="'tree_item_renderer.html'"></li>
+	    </ul>
+	</div>
     <script type="text/ng-template"  id="tree_item_renderer.html">
         <div ng-mouseenter="visibility = ''" ng-mouseleave="visibility = 'my-hide'">
-            <a href="#" editable-text="tree">
+            <a href="#/tree/{{tree.eid}}/task/{{taskId}}">
                 {{tree.tasks[taskId].desc}}
             </a>
             <button class="btn btn-default btn-xs" ng-hide="visibility" ng-click="addSiblingTask(taskId)">+</button>

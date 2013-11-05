@@ -54,6 +54,10 @@ treeCtrl.loadTree = function($route, treeDBSvc) {
 	return promise;	
 };
 
+taskCtrl = app.controller("taskCtrl", function($scope, $routeParams, treeDBSvc) {
+    $scope.task = {'desc' : 'Blaah'};
+});
+
 treeSnipsCtrl = app.controller('treeSnipsCtrl', function ($scope, treeSnipsData, treeDBSvc) {
     $scope.data = {
         treeSnips: treeSnipsData

@@ -11,6 +11,15 @@ app.config(function ($routeProvider) {
             	treeData: treeCtrl.loadTree
             }
         })
+        .when('/tree/:treeid/task/:taskid',
+        {
+            controller: 'taskCtrl',
+            templateUrl: '/eventline/static/app_js/partials/task.html',
+            // resolve: {
+            	// treeData: treeCtrl.loadTree,
+            	// taskData: taskCtrl.loadTask
+            // }
+        })
         .when('/treesnips',
         {
             controller: 'treeSnipsCtrl',
